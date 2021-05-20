@@ -190,15 +190,15 @@
     <div class="fix-menu">
 
         <div class="fix-menu__item">
-            <a href="" class="fix-menu__link fix-menu__link-catalog">
-                <span class="fix-menu__title">Каталог</span>
+            <a href="/partners" class="fix-menu__link fix-menu__link-charts">
+                @* <a href="/compareproducts" class="fix-menu__link fix-menu__link-home"> *@
+                <span class="fix-menu__title">Статистика</span>
             </a>
         </div>
 
         <div class="fix-menu__item">
-            <a href="/partners" class="fix-menu__link fix-menu__link-charts">
-                @* <a href="/compareproducts" class="fix-menu__link fix-menu__link-home"> *@
-                <span class="fix-menu__title">Статистика</span>
+            <a href="" class="fix-menu__link fix-menu__link-catalog">
+                <span class="fix-menu__title">Каталог</span>
             </a>
         </div>
 
@@ -210,9 +210,9 @@
 
         <div class="fix-menu__item">
             @* <a id="fixcartlink" href="@Url.RouteUrl("ShoppingCart")" class="fix-menu__link fix-menu__link-cart">
-                    <span class="fix-menu__title">Корзина</span>
-                    <span class="cart-qty">@T("ShoppingCart.HeaderQuantity", Model.ShoppingCartItems)</span>
-                </a> *@
+                <span class="fix-menu__title">Корзина</span>
+                <span class="cart-qty">@T("ShoppingCart.HeaderQuantity", Model.ShoppingCartItems)</span>
+            </a> *@
             <a id="fixcartlink" href="/cart" class="fix-menu__link fix-menu__link-cart">
                 <span class="fix-menu__title">Корзина</span>
                 <span class="cart-qty">0</span>
