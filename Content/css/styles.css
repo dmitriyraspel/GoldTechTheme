@@ -7412,6 +7412,18 @@ pre {
 
 }
 
+/* container */
+.container {
+    width: calc(100vw - 30px);
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media all and (min-width: 1367px) {
+	.container {
+		max-width: 1200px;
+	}
+}
 
 /* Home page Featured products */
 .home-page-product-grid .title {
