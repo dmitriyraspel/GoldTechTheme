@@ -61,14 +61,16 @@ script {
 
 /*********** GLOBAL STYLES **********/
 
-
-
 body {
-    max-width: 100%;
+	max-width: 100%;
 	overflow-x: hidden;
 	background-color: #fff;
-	font: normal 14px Arial, Helvetica, sans-serif;
-    color: #777;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #666;
+	font-weight: 400;
+	position: relative;
+	min-height: 100vh;
 }
 h1,h2,h3,h4,h5,h6 {
 	color: #444;
@@ -96,8 +98,8 @@ textarea, select {
 }
 input, textarea, select, button {
 	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #777;
+	font-family: 'Montserrat', sans-serif;
+	color: #666;
 }
 textarea {
 	min-height: 150px;
@@ -173,7 +175,7 @@ label, label + * {
 }
 .page-title h1 {
 	font-size: 30px;
-	font-weight: normal;
+	font-weight: 400;
 }
 .page:after,
 .page-title:after,
@@ -248,7 +250,7 @@ label, label + * {
 }
 .fieldset .title strong,
 .section .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .form-fields {
 	position: relative;
@@ -314,7 +316,7 @@ label, label + * {
 	margin: 0 -8px 0 3px; /*siblings offset*/
 	vertical-align: top;
 	font-size: 20px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #e4434b;
 }
 .message-error,
@@ -379,7 +381,7 @@ label, label + * {
     background-color: #f6f6f6;
     padding: 10px;
     white-space: nowrap;
-	font-weight: normal;
+	font-weight: 400;
 }
 .forum-table th.replies,
 .forum-table th.views,
@@ -416,7 +418,7 @@ label, label + * {
 .cart a,
 .data-table a,
 .forum-table a {
-	font-weight: normal;
+	font-weight: 400;
 	color: #C39B6A;
 }
 .cart a:hover,
@@ -439,7 +441,7 @@ label, label + * {
 .cart .product a,
 .data-table .product a,
 .data-table .info a {
-    font-weight: bold;
+    font-weight: 700;
 	color: #444;
 }
 .cart .product a:hover,
@@ -453,7 +455,7 @@ label, label + * {
 	margin: 10px 0 0;
 }
 .cart .product .edit-item a {
-	font-weight: normal;
+	font-weight: 400;
 	color: #C39B6A;
 }
 .cart .product .edit-item a:hover {
@@ -486,7 +488,7 @@ label, label + * {
 }
 
 .data-table em a {
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .data-table div.download {
@@ -589,7 +591,8 @@ label, label + * {
 	/*override jQuery UI styles, do not delete doubled properties*/
 	border-radius: 0;
 	padding: 0;
-	font: normal 14px Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
 }
 .ui-dialog:before {
 	content: "";
@@ -610,7 +613,7 @@ label, label + * {
 	border-radius: 0;
 	background-image: none;
 	padding: 10px 15px !important;
-	font-weight: normal;
+	font-weight: 400;
 	cursor: auto !important;
 }
 .ui-dialog-titlebar > span {
@@ -736,7 +739,7 @@ label, label + * {
 	margin: 0 10px;
 	line-height: 35px;
 	font-size: 12px;
-	font-weight: bold;
+	font-weight: 700;
 }
 .admin-header-links .impersonate {
 	display: inline-block;
@@ -900,7 +903,8 @@ label, label + * {
 	/*override jQuery UI styles, do not delete doubled properties*/
 	border-radius: 0;
 	padding: 0;
-	font: normal 14px Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
 }
 .ui-autocomplete li {
 	border-top: 1px solid #ddd;
@@ -966,7 +970,7 @@ label, label + * {
 	cursor: pointer;
 }
 .footer-block .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .footer-block .list {
 	display: none;
@@ -1071,7 +1075,7 @@ label, label + * {
 	font-size: 12px;
 }
 .footer-tax-shipping a {
-	font-weight: bold;
+	font-weight: 700;
 	color: #C39B6A;
 }
 .footer-tax-shipping a:hover {
@@ -1112,7 +1116,7 @@ label, label + * {
 	cursor: pointer;
 }
 .block .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .block .listbox {
 	display: none;
@@ -1203,7 +1207,7 @@ label, label + * {
 	background-color: #f6f6f6;
 	padding: 10px 15px;
 	font-size: 15px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #444;
 	text-transform: uppercase;
 }
@@ -1244,7 +1248,7 @@ label, label + * {
 .poll-total-votes {
 	display: block;
 	margin: 10px 0 0;
-	font-weight: bold;
+	font-weight: 700;
 	font-style: italic;
 	color: #444;
 }
@@ -1256,12 +1260,12 @@ label, label + * {
     border-bottom: 1px solid #ddd;
     color: #444;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 400;
     margin: 0 0 30px;
     padding: 0 0 15px;
 }
 .home-page-polls .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .home-page-polls li {
 	display: inline-block;
@@ -1291,7 +1295,7 @@ label, label + * {
 	line-height: 32px;
 }
 .breadcrumb strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .breadcrumb a:hover {
 	color: #C39B6A;
@@ -1366,7 +1370,7 @@ label, label + * {
 	color: #444;
 }
 .product-filter .filter-title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .product-filter .filter-content {
 	padding: 10px;
@@ -1490,7 +1494,7 @@ label, label + * {
 	overflow: hidden;
 	font-size: 17px;
     line-height: 1.2;
-	font-weight: normal;
+	font-weight: 400;
 	color: #C39B6A;
 }
 .item-box .product-title a {
@@ -1589,7 +1593,7 @@ label, label + * {
 .sub-category-grid .title {
 	text-align: center;
 	font-size: 22px;
-	font-weight: normal;
+	font-weight: 400;
     -webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
@@ -1616,11 +1620,11 @@ label, label + * {
 	border-bottom: 1px solid #ddd;
 	padding: 0 0 15px;
 	font-size: 30px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #444;
 }
 .product-grid .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 
 .manufacturer-grid .title {
@@ -1784,7 +1788,7 @@ label, label + * {
 }
 .overview .product-name h1 {
 	font-size: 30px;
-    font-weight: normal;
+    font-weight: 400;
 }
 .overview .short-description {
 	margin: 0 0 25px;
@@ -1912,7 +1916,7 @@ label, label + * {
 	margin: 10px 0;
 	background: url('../images/shipping.png') left center no-repeat;
 	padding: 2px 0 2px 28px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .overview .free-shipping.invisible,
@@ -1959,7 +1963,7 @@ label, label + * {
 .overview .product-price,
 .variant-overview .product-price {
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .overview .tax-shipping-info a,
@@ -1978,7 +1982,7 @@ label, label + * {
 .customer-entered-price .price-input label {
 	display: block;
 	margin: 0 0 5px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .customer-entered-price .price-input input {
@@ -2075,7 +2079,7 @@ label, label + * {
 	color: #444;
 }
 .product-collateral .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 
 .product-variant-line {
@@ -2102,7 +2106,7 @@ label, label + * {
 	margin: 0 0 10px;
 	padding: 10px 0;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #C39B6A;
 }
 .variant-overview .variant-description {
@@ -2158,7 +2162,7 @@ label, label + * {
 	display: block;
 	margin: 0 0 5px;
 	white-space: nowrap; 
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .attributes dd,
@@ -2198,8 +2202,9 @@ label, label + * {
 	border: none;
 	border-radius: 0;
 	padding: 0;
-	font: normal 14px Arial, Helvetica, sans-serif;
-	color: #777;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	color: #666;
 }
 .ui-datepicker-header {
 	position: relative;
@@ -2211,7 +2216,7 @@ label, label + * {
 	border-radius: 0;
 	background-image: none;
 	padding: 0 !important;
-	font-weight: normal;
+	font-weight: 400;
 }
 .ui-datepicker-header a {
 	position: absolute;
@@ -2243,7 +2248,7 @@ label, label + * {
 	position: relative;
 	z-index: 0;
 	line-height: 32px;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 	/*override jQuery UI styles, do not delete doubled properties*/
 	line-height: 32px !important;
@@ -2280,7 +2285,7 @@ label, label + * {
 }
 .ui-datepicker-calendar .ui-state-active {
 	outline: 2px solid #C39B6A;
-	font-weight: bold;
+	font-weight: 700;
 	color: #C39B6A;
 	/*override jQuery UI styles, do not delete doubled properties*/
 	color: #C39B6A !important;
@@ -2387,7 +2392,7 @@ label, label + * {
 .giftcard label {
 	display: block;
 	margin: 0 auto 5px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .giftcard input,
@@ -2417,7 +2422,7 @@ label, label + * {
 	color: #444;
 }
 .product-reviews-page .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 
 .write-review {
@@ -2539,7 +2544,7 @@ label, label + * {
 }
 .product-review-item .reply-header {
 	margin: 15px 0;
-    font-weight: bold;
+    font-weight: 700;
 }
 .product-review-item .reply-text {
 	line-height: 22px;
@@ -2548,7 +2553,7 @@ label, label + * {
 	margin: 0 0 5px;
 }
 .product-review-item .review-info label {
-	font-weight: normal;
+	font-weight: 400;
 }
 .product-review-item .review-info a,
 .product-review-helpfulness .vote {
@@ -2637,7 +2642,7 @@ label, label + * {
 	margin: 0 0 5px;
 }
 .wishlist-page .share-info a {
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .wishlist-page .share-info a:hover {
@@ -2680,7 +2685,7 @@ label, label + * {
 	min-width: 0;
 }
 .compare-products-table td label {
-	font-weight: normal;
+	font-weight: 400;
     color: #777;
 }
 .compare-products-table .remove-button {
@@ -2712,7 +2717,7 @@ label, label + * {
     margin: auto;
 }
 .compare-products-table .product-name td {
-	font-weight: bold;
+	font-weight: 700;
 }
 .compare-products-table .product-name td a:hover {
     color: #C39B6A;
@@ -2743,7 +2748,7 @@ label, label + * {
 }
 .topic-block-title h2 {
 	font-size: 30px;
-	font-weight: normal;
+	font-weight: 400;
 }
 .topic-block-body {
 	text-align: justify;
@@ -2847,7 +2852,7 @@ label, label + * {
 	margin: 25px 0;
 }
 .email-a-friend-page .title h2 {
-	font-weight: normal;
+	font-weight: 400;
 	color: #C39B6A;
 }
 
@@ -2993,7 +2998,7 @@ label, label + * {
 	color: #444;
 }
 .login-page .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .login-page .new-wrapper {
 	margin: 0 0 50px;
@@ -3072,7 +3077,7 @@ label, label + * {
 
 .password-recovery-page .result {
 	margin: 0 0 5px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .password-recovery-page .tooltip {
@@ -3121,7 +3126,7 @@ label, label + * {
 .address-list-page .info .name,
 .order-list-page .info .name {
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 }
 .address-list-page .button-2,
 .order-list-page .button-2 {
@@ -3398,7 +3403,7 @@ label, label + * {
 }
 .checkout-attributes dt {
 	margin: 0 0 5px;
-	font-weight: bold;
+	font-weight: 700;
 }
 .checkout-attributes dd {
 	margin: 0 0 20px;
@@ -3478,7 +3483,7 @@ label, label + * {
 	color: #C39B6A;
 }
 .cart-total .order-total strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .cart-total .earn-reward-points {
 	font-style: italic;
@@ -3559,7 +3564,7 @@ label, label + * {
 	color: #444;
 }
 .cart-collaterals .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .cart-collaterals .hint {
 	margin: 0 0 10px;
@@ -3863,7 +3868,7 @@ label, label + * {
 
 .product-estimate-shipping .shipping-title {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   color: #444;
   margin-bottom: 5px;
   justify-content: center;
@@ -3949,7 +3954,7 @@ label, label + * {
 }
 .checkout-page .address-item li.name {
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .enter-address .message-error {
@@ -3968,7 +3973,7 @@ label, label + * {
 }
 .checkout-page .ship-to-same-address .selector {
 	margin: 0 0 5px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 
@@ -3977,7 +3982,7 @@ label, label + * {
 }
 .checkout-page .pickup-in-store .selector {
 	margin: 0 0 5px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 
@@ -4007,7 +4012,7 @@ label, label + * {
 .shipping-method .method-list li label,
 .payment-method .method-list li label {
 	font-size: 13px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .shipping-method .method-description {
@@ -4098,7 +4103,7 @@ label, label + * {
 	margin: 0 0 5px;
 	padding: 0;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 }
 .order-review-data .title strong,
 .order-details-area .title strong,
@@ -4121,7 +4126,7 @@ label, label + * {
 	margin: 5px 0;
 }
 .order-completed .details strong {
-	font-weight: normal;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 .order-completed .details a {
@@ -4147,7 +4152,7 @@ label, label + * {
 	padding: 10px 15px;
 	line-height: 20px;
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: 400;
 }
 .opc .allow .step-title .number,
 .opc .allow .step-title .title {
@@ -4263,7 +4268,7 @@ label, label + * {
 	text-transform: uppercase;
 }
 .order-details-page .order-overview .order-total strong {
-	font-weight: normal;
+	font-weight: 400;
 	color: #C39B6A;
 }
 
@@ -4282,7 +4287,7 @@ label, label + * {
 }
 
 .order-details-page .download a {
-	font-weight: normal;
+	font-weight: 400;
 	color: #C39B6A;
 }
 .order-details-page .download a:hover {
@@ -4422,7 +4427,7 @@ label, label + * {
 }
 .sitemap-page .entity-title h2 {
 	font-size: 20px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #444;
 }
 .sitemap-page .entity-body {
@@ -4498,7 +4503,7 @@ label, label + * {
 	padding: 20px 10px;
 	line-height: 20px;
     font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .post-title:hover,
@@ -4530,7 +4535,7 @@ label, label + * {
 .blogpost-page .tags label {
 	display: inline-block;
 	margin: 0 3px 3px 0;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .blog-page .tags ul,
@@ -4566,7 +4571,7 @@ label, label + * {
 .blog-posts .buttons .read-comments {
 	display: block;
 	margin: 0 0 15px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .blog-posts .buttons .read-comments:hover {
@@ -4622,7 +4627,7 @@ label, label + * {
 	color: #444;
 }
 .comment-list .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .comment-list .comment {
 	margin: 0 0 40px;
@@ -4643,7 +4648,7 @@ label, label + * {
 	border: 1px solid #ddd;
 	background-color: #f6f6f6;
 	padding: 11px 0;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .comment-info a.username:hover {
@@ -4670,7 +4675,7 @@ label, label + * {
 .comment-time {
 	margin: 0 0 15px;
 	font-size: 13px;
-	font-weight: bold;
+	font-weight: 700;
 }
 .comment-time span {
 	color: #444;
@@ -4692,11 +4697,11 @@ label, label + * {
 	border-bottom: 1px solid #ddd;
 	padding: 0 0 15px;
 	font-size: 30px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #444;
 }
 .news-list-homepage .title strong {
-	font-weight: normal;
+	font-weight: 400;
 }
 .news-list-homepage .view-all {
 	text-align: center;
@@ -4780,7 +4785,7 @@ label, label + * {
 .forums-table-section-title a,
 .forums-table-section-title strong {
 	font-size: 22px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #444;
 }
 .forums-table-section-title a:hover {
@@ -4807,7 +4812,7 @@ label, label + * {
 .forums-table-section .forum-title a,
 .forums-table-section .topic-title a {
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .forums-table-section .forum-title a:hover,
@@ -4862,7 +4867,7 @@ label, label + * {
 .forum-page .forum-name h1,
 .forum-topic-page .topic-name h1 {
 	font-size: 30px;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 .forum-actions,
@@ -4919,7 +4924,7 @@ label, label + * {
 }
 .active-discussions-page .forums-table-section-title strong {
 	font-size: 30px;
-	font-weight: normal;
+	font-weight: 400;
 }
 .active-discussions-page .forums-table-section-body {
 	margin: 0 0 20px;
@@ -4952,7 +4957,7 @@ label, label + * {
 	border: 1px solid #ddd;
 	background-color: #f6f6f6;
 	padding: 11px 0;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .topic-post a.username:hover {
@@ -4990,7 +4995,7 @@ label, label + * {
 .topic-post .user-stats span,
 .profile-info-box .profile-stats span {
 	margin: 0 0 0 3px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .topic-post .pm-button,
@@ -5013,7 +5018,7 @@ label, label + * {
 	background-color: #f6f6f6;
 	padding: 10px 15px;
 	font-size: 13px;
-	font-weight: bold;
+	font-weight: 700;
 }
 .topic-post .post-time span {
 	color: #444;
@@ -5046,7 +5051,7 @@ label, label + * {
 }
 .topic-post .post-actions .post-link-button {
 	padding: 10px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #C39B6A;
 }
 .topic-post .post-actions .post-link-button:hover {
@@ -5137,7 +5142,7 @@ label, label + * {
 	display: inline-block;
 	max-width: 400px;
 	font-size: 22px; /*reset zeroing*/
-	font-weight: normal;
+	font-weight: 400;
 	color: #444;
 	white-space: normal;
 }
@@ -5214,13 +5219,14 @@ label, label + * {
 /* jQuery tabs */
 
 .ui-tabs {
-    /*override jQuery UI styles, do not delete doubled properties*/
-    border: none;
-    border-radius: 0;
-    background: none;
-    padding: 0;
-    font: normal 14px Arial, Helvetica, sans-serif;
-    color: #777;
+	/*override jQuery UI styles, do not delete doubled properties*/
+	border: none;
+	border-radius: 0;
+	background: none;
+	padding: 0;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	color: #666;
 }
 .ui-widget.ui-widget-content.ui-tabs {
     border: none;
@@ -5237,7 +5243,7 @@ label, label + * {
 	background: none;
 	padding: 0 !important;
 	line-height: normal;
-	font-weight: normal;
+	font-weight: 400;
 	color: #444;
 }
 .ui-tabs-nav li {
@@ -5322,7 +5328,7 @@ label, label + * {
 	line-height: 22px;
 }
 .private-message-view-page .message-head span {
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .private-message-view-page .message-body {
@@ -5379,7 +5385,7 @@ label, label + * {
 	font-size: 16px;
 }
 .latest-posts .topic-title a {
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .latest-posts .topic-title a:hover {
@@ -5582,7 +5588,7 @@ pre {
 	background: #C39B6A url('../images/menu-icon.png') right center no-repeat;
 	padding: 15px;
 	font-size: 15px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -5628,7 +5634,7 @@ pre {
 	background: url('../images/toggle-black.png') center no-repeat;
 	padding: 15px;
 	font-size: 15px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -6291,7 +6297,7 @@ pre {
 	background-color: #f6f6f6;
 	padding: 10px 15px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400;
 }
 .comment-title {
 	margin: 0 0 -20px;
@@ -6388,7 +6394,7 @@ pre {
 	float: left;
 	margin: 0;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400;
 }
 .topic-post .post-actions {
 	float: right;
@@ -6618,7 +6624,7 @@ pre {
 }
 .mini-shopping-cart .count a {
 	margin: 0 2px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #444;
 }
 .mini-shopping-cart .items {
@@ -6884,7 +6890,7 @@ pre {
 	cursor: auto;
 }
 .block .title strong {
-	font-weight: bold;
+	font-weight: 700;
 }
 .block .listbox {
 	display: block;
@@ -7468,8 +7474,8 @@ pre {
 	flex-direction: column;
 }
 .home-page-product-grid .item-box .product-title {
-	color: #333;
 	font-weight: 700;
+	color: #666;
 }
 .home-page-product-grid .item-box .product-rating-box {
 	margin-top: auto;
