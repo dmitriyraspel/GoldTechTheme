@@ -63,7 +63,6 @@ script {
 
 body {
 	max-width: 100%;
-	overflow-x: hidden;
 	background-color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
@@ -72,7 +71,7 @@ body {
 	position: relative;
 	min-height: 100vh;
 }
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
 	color: #444;
 }
 a {
@@ -7438,7 +7437,14 @@ pre {
 	background: rgba(102, 102, 102, 0.1);
 }
 
-/* container */
+
+.master-wrapper-page {
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
 .container {
     width: calc(100vw - 30px);
     max-width: 980px;
