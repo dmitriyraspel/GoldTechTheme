@@ -8,9 +8,24 @@ function slideNavOpen() {
         });
     }
     function slideNavClick(e) {
-        console.log(this)
         e.preventDefault()
         body.classList.toggle('slide-nav-open');
     }
 }
 slideNavOpen();
+
+function searchBoxOpen() {
+    var body = document.body;
+    var searchBoxToggles = document.querySelectorAll('a.header-search-toggle');
+
+    if (searchBoxToggles.length > 0) {
+        searchBoxToggles.forEach(searchBoxToggle => {
+            searchBoxToggle.addEventListener('click', searchNavClick)
+        });
+    }
+    function searchNavClick(e) {
+        e.preventDefault()
+        body.classList.toggle('header-search-open');
+    }
+}
+searchBoxOpen();

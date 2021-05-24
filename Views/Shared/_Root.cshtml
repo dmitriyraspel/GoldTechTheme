@@ -14,18 +14,15 @@
         };
         AjaxCart.init(false, '.fix-menu .cart-qty', '.fix-menu .wishlist-qty', '#flyout-cart', localized_data);
     </script>
-    <div class="header-menu">
-        <div class="slide-nav-close">
-            <a href="/cart" class="slide-nav-toggle"></a>
-        </div>
+
         @await Component.InvokeAsync("TopMenu")
-    </div>
+    
     <div class="master-wrapper-content">
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContentBefore })
 
         @if (IsSectionDefined("Breadcrumb"))
         {
-            @RenderSection("Breadcrumb") 
+            @RenderSection("Breadcrumb")
         }
         <div class="master-column-wrapper">
             @RenderBody()
