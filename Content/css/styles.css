@@ -224,7 +224,7 @@ label, label + * {
 }
 
 .buttons {
-    margin: 0 0 30px;
+    margin: 0 0 15px;
 }
 
 .link-rss {
@@ -297,8 +297,6 @@ label, label + * {
 
 .form-fields {
     position: relative;
-    border-top: 1px solid #e6e6e6;
-    background-color: #f9f9f9;
     padding: 30px 15px;
 }
 
@@ -438,7 +436,7 @@ label, label + * {
     border-width: 1px 1px 0;
     border-style: solid;
     border-color: #ddd;
-    background-color: #f6f6f6;
+    background-color: rgba( 195, 155, 106, 0.5);
     padding: 10px;
     white-space: nowrap;
     font-weight: 400;
@@ -3563,28 +3561,42 @@ label, label + * {
 }
 
 .login-page .customer-blocks {
-    margin: 0 0 30px;
+    margin: 0 auto 30px;
+    width: 600px;
+    max-width: 100%;
+}
+.login-page .page-title {
+    display: none;
 }
 
+.login-page .register-block,
+.login-page .returning-wrapper,
+.login-page .external-authentication {
+    margin: 0 auto;
+    width: 320px;
+    max-width: 100%;
+}
+.login-page .register-block {
+
+}
+
+
 .login-page .title {
-    margin: 0 0 15px;
-    font-size: 20px;
-    color: #444;
+    padding: 0;
 }
 
     .login-page .title strong {
         font-weight: 400;
     }
 
-.login-page .new-wrapper {
-    margin: 0 0 50px;
+
+.login-page .returning-wrapper .inputs label {
+    display: block;
+    text-align: left;
 }
 
     .login-page .new-wrapper .text {
         margin: 0 0 30px;
-        border-top: 1px solid #e6e6e6;
-        background-color: #f9f9f9;
-        padding: 30px;
         line-height: 22px;
     }
 
@@ -3600,25 +3612,32 @@ label, label + * {
         margin: 0 0 5px;
     }
 
-.login-page .returning-wrapper {
-    margin: 0;
-}
 
     .login-page .returning-wrapper .form-fields {
         overflow: hidden;
-        padding: 30px 15px 0;
+        padding: 15px 0 0;
     }
-
+ /*   .login-page .returning-wrapper input[type="text"],
+    .login-page .returning-wrapper input[type="email"],
+    .login-page .returning-wrapper input[type="password"],
+    .login-page .returning-wrapper .button-1 {
+        width: 100%;
+        border-radius: 6px;
+    } */
+    
     .login-page .returning-wrapper .inputs.reversed {
-        white-space: normal;
+        text-align: left;
     }
-
         .login-page .returning-wrapper .inputs.reversed * {
             display: inline-block;
             width: auto;
             margin: 5px;
             font-size: 14px; /*reset zeroing*/
             color: #444;
+        }
+        .login-page .returning-wrapper .inputs.reversed .forgot-password {
+            display: block;
+
         }
 
         .login-page .returning-wrapper .inputs.reversed a:hover {
@@ -3627,11 +3646,6 @@ label, label + * {
 
 .login-page .captcha-box {
     margin: -15px 0 20px;
-}
-
-.login-page .returning-wrapper .buttons {
-    background-color: #fff;
-    padding: 30px 0;
 }
 
 .external-authentication {
@@ -3689,6 +3703,22 @@ label, label + * {
         .add-more-external-records a:hover {
             text-decoration: underline;
         }
+
+
+.login-page .topic-block {
+    max-width: 600px;
+    margin: 0 auto 15px;
+}
+.login-page .topic-block-title {
+    border: none;
+}
+.login-page .topic-block h2 {
+    margin: 0 0 15px;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #444;
+}
+
 
 .account-page .buttons {
     text-align: center;
@@ -4017,9 +4047,7 @@ label, label + * {
         }
 
 .shopping-cart-page .common-buttons {
-    margin: 0 0 60px;
-    background-color: #f6f6f6;
-    padding: 20px;
+    margin: 15px 0;
     font-size: 0;
 }
 
@@ -4028,26 +4056,18 @@ label, label + * {
         min-width: 180px;
         margin: 5px;
         border: none;
-        background-color: #aaa;
+        background-color: #C39B6A;
         padding: 10px 20px;
         font-size: 15px;
         color: #fff;
+        border-radius: 6px;
     }
 
         .shopping-cart-page .common-buttons input:hover {
-            background-color: #999;
+            background-color: #d4ab79;
         }
-
-        .shopping-cart-page .common-buttons input:first-child {
-            background-color: #C39B6A;
-        }
-
-            .shopping-cart-page .common-buttons input:first-child:hover {
-                background-color: #d4ab79;
-            }
 
 .checkout-attributes {
-    margin: -30px 0 30px;
     color: #444;
 }
 
@@ -4115,7 +4135,6 @@ label, label + * {
         width: 350px;
         max-width: 100%;
         margin: 0 auto 50px;
-        background-color: #f9f9f9;
         padding: 10px;
         color: #444;
     }
@@ -4143,7 +4162,8 @@ label, label + * {
 
 .cart-total .order-total {
     font-size: 20px;
-    color: #C39B6A;
+    color: #444;
+    font-weight: 700;
 }
 
     .cart-total .order-total strong {
@@ -4196,6 +4216,7 @@ label, label + * {
     font-size: 16px;
     color: #fff;
     text-transform: uppercase;
+    border-radius: 6px;
 }
 
     .cart-footer .checkout-button:hover {
@@ -4215,21 +4236,21 @@ label, label + * {
 }
 
     .cart-collaterals > div {
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 0 50px;
     }
 
     .cart-collaterals .button-2 {
         display: inline-block;
         border: none;
-        background-color: #aaa;
+        background-color: #C39B6A;
         padding: 10px 15px;
         color: #fff;
         text-transform: uppercase;
     }
 
         .cart-collaterals .button-2:hover {
-            background-color: #999;
+            background-color: #d4ab79;
         }
 
     .cart-collaterals .title {
@@ -4254,18 +4275,12 @@ label, label + * {
         overflow: hidden;
     }
 
-        .cart-collaterals .coupon-code input[type="text"] {
-            float: left;
-            width: 60%;
-            height: 36px; /*safari padding fix*/
-            margin: 0 -1px 0 0;
-        }
-
+        .cart-collaterals .coupon-code input[type="text"],
         .cart-collaterals .coupon-code input[type="submit"] {
-            float: left;
-            width: 40%;
+            width: 100%;
+            border-radius: 6px;
             height: 36px; /*safari padding fix*/
-            padding: 0;
+            margin: 0 0 15px 0;
         }
 
     .cart-collaterals .message-failure {
@@ -4531,15 +4546,16 @@ label, label + * {
     min-width: 180px;
     margin: 5px;
     border: none;
-    background-color: #aaa;
+    background-color: #C39B6A;
     padding: 10px 20px;
     font-size: 15px;
     text-align: center;
     color: #fff;
+    border-radius: 6px;
 }
 
     .shopping-cart-page .common-buttons .estimate-shipping-button:hover {
-        background-color: #999;
+        background-color: #d4ab79;
     }
 
 
@@ -6470,8 +6486,12 @@ pre {
             .cart td.remove-from-cart {
                 margin: 0 0 15px;
                 border-bottom: 1px solid #ddd;
-                background-color: #eee;
+                background-color: rgba( 195, 155, 106, 0.8);
                 padding: 10px;
+                color: #fff;
+            }
+            .cart td.remove-from-cart input[type="checkbox"] {
+                border: none;
             }
 
             .cart td.product-picture {
@@ -8104,35 +8124,10 @@ pre {
         overflow: hidden;
     }
 
-    .login-page .new-wrapper {
-        float: left;
-        width: 49%;
-        margin: 0;
+    .login-page .returning-wrapper .form-fields {
+        min-height: 200px;
+        padding: 30px 0 0;
     }
-
-        .login-page .new-wrapper .text {
-            min-height: 200px;
-        }
-
-    .login-page .returning-wrapper {
-        float: right;
-        width: 49%;
-    }
-
-        .login-page .returning-wrapper .form-fields {
-            min-height: 200px;
-            padding: 30px 0 0;
-        }
-
-        .login-page .returning-wrapper .inputs label {
-            width: 110px;
-        }
-
-        .login-page .returning-wrapper input[type="text"],
-        .login-page .returning-wrapper input[type="email"],
-        .login-page .returning-wrapper input[type="password"] {
-            width: 300px;
-        }
 
     .address-list-page .section,
     .order-list-page .section,
