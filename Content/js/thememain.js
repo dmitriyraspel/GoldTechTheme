@@ -1,6 +1,6 @@
 function slideNavOpen() {
     var body = document.body;
-    var slideNavButtons = document.querySelectorAll('a.slide-nav-toggle');
+    var slideNavButtons = document.querySelectorAll('.slide-nav-toggle');
 
     if (slideNavButtons.length > 0) {
         slideNavButtons.forEach(slideNavButton => {
@@ -16,7 +16,7 @@ slideNavOpen();
 
 function searchBoxOpen() {
     var body = document.body;
-    var searchBoxToggles = document.querySelectorAll('a.header-search-toggle');
+    var searchBoxToggles = document.querySelectorAll('.header-search-toggle');
 
     if (searchBoxToggles.length > 0) {
         searchBoxToggles.forEach(searchBoxToggle => {
@@ -25,7 +25,7 @@ function searchBoxOpen() {
     }
     function searchNavClick(e) {
         e.preventDefault()
-        body.classList.toggle('header-search-open');
+        body.classList.toggle('store-search-box-open');
     }
 }
 searchBoxOpen();

@@ -124,6 +124,7 @@ select {
     min-width: 50px;
     height: 32px; /*safari padding fix*/
     padding: 6px;
+    background: #fff;
 }
 
     input[type="text"]:focus,
@@ -587,7 +588,7 @@ label, label + * {
 }
 
 .bar-notification.success {
-    background-color: #4bb07a;
+    background-color: rgba( 195, 155, 106, 0.8);
 }
 
 .bar-notification.error {
@@ -620,7 +621,7 @@ label, label + * {
         width: 32px;
         height: 32px;
         margin: 7px;
-        background: #fff url('../images/close.png') center no-repeat;
+        background: url('../images/close-temp.png') center no-repeat;
         cursor: pointer;
     }
 
@@ -1145,11 +1146,7 @@ label, label + * {
         vertical-align: middle;
     }
 
-
 /*********** FOOTER ***********/
-
-
-
 .footer {
     background-color: #242633;
     color: #999;
@@ -6538,7 +6535,7 @@ pre {
                 text-align: center;
             }
 
-    
+    /* maybe this need remove !!!  */
 
     .sublist-toggle {
         position: absolute;
@@ -6598,8 +6595,7 @@ pre {
     /*** GLOBAL ***/
 
 
-    .master-wrapper-content,
-    .header-menu {
+    .master-wrapper-content {
         width: 92.5%;
     }
 
@@ -7731,17 +7727,11 @@ pre {
     .header-menu {
         position: relative;
         z-index: 5;
-        width: 980px;
         margin: 0 auto 30px;
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
         padding: 25px 0;
         text-align: center;
     }
 
-    .sublist-toggle {
-        display: none;
-    }
 
     .header-menu > ul {
         display: block !important; /* prevents toggle display:none on resize */
@@ -8382,11 +8372,6 @@ pre {
 
     /*** NAVIGATION ***/
 
-
-    .header-menu {
-        width: 1200px;
-    }
-
         .header-menu > ul > li {
             padding: 0 20px;
         }
@@ -8610,7 +8595,7 @@ pre {
     visibility: hidden;
     opacity: 0;
 }
-.header-search-open .store-search-box {
+.store-search-box-open .store-search-box {
     max-height: 50px;
     visibility: visible;
     margin-top: 30px;
@@ -8905,7 +8890,25 @@ pre {
     display: block;
     padding: 15px 18px;
 }
-
+.slide-nav .sublist-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    background: url(../images/toggle-gold-temp.png) center no-repeat;
+    padding: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.slide-nav .sublist .sublist-toggle {
+    height: 49px;
+}
+.slide-nav .sublist-toggle.open {
+    transform: rotate(90deg);
+}
 
 
 /* Home page Featured products */
