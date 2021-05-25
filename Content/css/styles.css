@@ -918,7 +918,7 @@ label, label + * {
 .language-selector {
     position: relative;
     padding-left: 12px;
-    height: 36px;
+    height: 24px;
 }
 .currency-selector::before, .language-selector::before {
     content: "";
@@ -926,7 +926,6 @@ label, label + * {
     display: block;
     width: 24px;
     height: 20px;
-    top: 6px;
     left: 0;
 }
 .currency-selector::before {
@@ -952,6 +951,7 @@ label, label + * {
     color: #666;
     font-size: 14px;
     padding: 6px 12px;
+    margin-top: -6px;
 }
 
 .language-list {
@@ -1011,8 +1011,8 @@ label, label + * {
     text-decoration: none;
     background: transparent;
     border: none;
-    height: 36px;
-    width: 36px;
+    height: 24px;
+    width: 24px;
     font-size: 0px;
     overflow: hidden;
 }
@@ -1021,7 +1021,7 @@ label, label + * {
     position: absolute;
     display: block;
     width: 24px;
-    height: 36px;
+    height: 20px;
     top: 0;
     left: 0;
     background-size: contain;
@@ -1047,6 +1047,33 @@ label, label + * {
     background: url("../images/search-temp.png") center no-repeat;
     background-size: contain;
 }
+@media (min-width: 600px) {
+    .currency-selector,
+    .language-selector {
+        height: 36px;
+    }
+    .language-selector::before,
+    .currency-selector::before {
+        height: 24px;
+    }
+    .header-selectors-wrapper select {
+        margin-top: -4px;
+    }
+    .header-links a {
+        width: 36px;
+        height: 36px;
+    }
+    .header-links ul a::before {
+        width: 24px;
+        height: 24px;
+        left: 6px;
+    }
+    .header-links ul a.ico-search::before {
+        height: 28px;
+        width: 28px;
+    }
+}
+
 
 @media (min-width: 1001px) {
     .header-links > ul {
@@ -3488,6 +3515,10 @@ label, label + * {
         margin-left: 10px;
         margin-bottom: 0;
     }
+
+.login-page .page-body {
+    margin-top: 30px;
+}
 
 .registration-page .button-1,
 .registration-result-page .button-1,
