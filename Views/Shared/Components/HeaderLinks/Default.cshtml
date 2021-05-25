@@ -4,7 +4,7 @@
 <div class="header-links">
     <ul>
         <li>
-            <a class="ico-search header-search-toggle"></a>
+            <a class="ico-search header-search-toggle" aria-controls="store-search-box" aria-expanded="false"></a>
         </li>
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderLinksBefore })
         @if (Model.IsAuthenticated)
@@ -52,7 +52,7 @@
 
 <div class="fix-menu">
     <div class="fix-menu__item">
-        <a href="/catalog" class="fix-menu__link fix-menu__link-catalog slide-nav-toggle">
+        <a href="/catalog" class="fix-menu__link fix-menu__link-catalog slide-nav-toggle" aria-controls="slide-nav" aria-expanded="false">
             <span class="fix-menu__title">Каталог</span>
         </a>
     </div>
