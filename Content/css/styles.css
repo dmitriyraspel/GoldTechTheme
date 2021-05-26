@@ -220,7 +220,7 @@ label, label + * {
 }
 
     .page-title h1 {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 400;
     }
 
@@ -772,7 +772,7 @@ label, label + * {
     }
 
         .ui-dialog-content .page-title h1 {
-            font-size: 24px;
+            font-size: 22px;
             line-height: 30px;
         }
 
@@ -6896,6 +6896,9 @@ pre {
 
 
     /**** GLOBAL ***/
+    .page-title h1 {
+        font-size: 22px;
+    }
 
 
     .master-wrapper-content {
@@ -7593,6 +7596,9 @@ pre {
 
     /*** GLOBAL STYLES ***/
 
+    .page-title h1 {
+        font-size: 30px;
+    }
 
     .master-wrapper-content {
         width: 980px;
